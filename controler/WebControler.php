@@ -8,7 +8,19 @@ class WebControler{
 
     public function cargarHome($request, $response, $args){
         $data['tema'] = $this->c->data->getTemas();
-        $response = $this->c->view->render($response, "home.php", $data);
+        $response = $this->c->view->render($response, "home.php", []);
+        return $response;
+    }
+
+    public function temas($request, $response, $args){
+        $data['tema'] = $this->c->data->getTemas();
+        $response = $this->c->view->render($response, "pregTema.php", $data);
+        return $response;
+    }
+
+    public function crear($request, $response, $args){
+        $data['tema'] = $this->c->data->getTemas();
+        $response = $this->c->view->render($response, "crear.php", []);
         return $response;
     }
 
