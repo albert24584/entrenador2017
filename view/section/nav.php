@@ -1,13 +1,11 @@
 
-<nav>
-
   <div class="container">
       <div class="masthead">
         <h3 class="text-muted">Home</h3>
 
         <nav class="navbar navbar-light bg-faded rounded mb-3">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="glyphicon glyphicon-align-justify"></span>
           </button>
           <div class="collapse navbar-toggleable-md" id="navbarCollapse">
             <ul class="nav navbar-nav text-md-center justify-content-md-between">
@@ -36,4 +34,3 @@
           </div>
         </nav>
       </div>
-</nav>
