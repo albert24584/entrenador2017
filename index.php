@@ -9,6 +9,7 @@ $configuration = [
         'displayErrorDetails' => true,
     ],
 ];
+
 $c = new \Slim\Container($configuration);
 
 $app = new Slim\App($c);
@@ -27,6 +28,12 @@ $c['data'] = function(){
     $dataAccess = new DataAccess($db);
     return $dataAccess;
 };
+
+$app->add(new \Slim\Middleware\HttpBasicAuthentication([
+    "users" => [
+        "admin" => "admin"
+    ]
+]));
 
 //URLs
 $app->get("/", "\WebControler:cargarHome");
