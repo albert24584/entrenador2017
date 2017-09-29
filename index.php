@@ -30,9 +30,9 @@ $c['data'] = function(){
 
 //URLs
 $app->get("/", "\WebControler:cargarHome");
-// $app->get("/temas","\WebControler:temas");
-// $app->get("/crear","\WebControler:crear");
-// $app->get("/estadisticas","\WebControler:estadisticas");
+$app->get("/temas/{id}","\WebControler:temas");
+ $app->get("/crear","\WebControler:crear");
+ $app->get("/estadisticas","\WebControler:estadisticas");
 
 
 $app->run();

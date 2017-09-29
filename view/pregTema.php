@@ -4,11 +4,15 @@
         <main class="container">
           <div class="row">
       <div class="col-md-8">
-        <table class="table">
-          <tr>
-            <th class="text-center" colspan="4" >Grupo 1</th>
-          </tr>
-        </table>
+        <h1><?php echo $data["tema"]['titulo']; ?></h1>
+        <h2><?php echo $data["pregunta"]['pregunta']; ?></h2>
+        <?php
+        foreach($data["respostes"] as $resposta){
+
+          echo "<p>".$resposta['respuesta']."</p>";
+        } 
+        
+         ?>
       </div>
     </div>
   </main>
