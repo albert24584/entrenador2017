@@ -30,17 +30,25 @@ $c['data'] = function(){
 };
 
 $app->add(new \Slim\Middleware\HttpBasicAuthentication([
+    "path" => "/admin",
+    "realm" => "Protected",
     "users" => [
         "admin" => "admin"
     ]
 ]));
 
-//URLs
-$app->get("/", "\WebControler:cargarHome");
-$app->get("/temas/{id}","\WebControler:temas");
- $app->get("/crear","\WebControler:crear");
- $app->get("/estadisticas","\WebControler:estadisticas");
+//middleware estadístiques
+require_once "src/middleware.php";
+$urlmiddleware = new StatisticsUrlMiddleware();
 
+//$app->add(new \Slim\Middleware\SafeURLMiddleware());
+
+//URLs
+$app->get("/", "\WebControler:cargarHome")->add($urlmiddleware);
+$app->get("/temas/{id}","\WebControler:temas")->add($urlmiddleware);
+$app->get("/admin/crear","\WebControler:crear");
+$app->post("/admin/crear","\WebControler:add");
+$app->get("/estadisticas","\WebControler:estadisticas");
 
 $app->run();
 ?>

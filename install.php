@@ -67,6 +67,13 @@
             if($res===FALSE) echo "<li>Creación de la tabla respuestas: <span class='err' title=\"$err\">ERROR</span></li>";
             else echo "<li>Creación de la tabla respuestas: <span class='ok'>OK</span></li>";
 
+            /* Crear la tabla estadistica */
+            $sql = "create table estadistica(id int auto_increment primary key, url varchar(30) not null, visites int);";
+            $res = $conexion->exec($sql);
+            $err=$conexion->errorInfo()[2];
+            if($res===FALSE) echo "<li>Creación de la tabla estadistica: <span class='err' title=\"$err\">ERROR</span></li>";
+            else echo "<li>Creación de la tabla estadistica: <span class='ok'>OK</span></li>";
+
 
             /* Introducir temas de prueba */
             $sql = "insert into temas(titulo, titulo_url) values

@@ -22,11 +22,18 @@ class DataAccess{
         return $res->fetch();
     }
 
-    public function getPregunta($id){
+    public function getPreguntes($id){
 
         $sql = "SELECT * FROM preguntas WHERE tema = '".$id."';";
         $res = $this->pdo->query($sql);
         return $res->fetchAll();
+    }
+
+    public function getPregunta($id){
+
+        $sql = "SELECT * FROM preguntas WHERE id = '".$id."';";
+        $res = $this->pdo->query($sql);
+        return $res->fetch();
     }
 
     public function getRespostes($id){
@@ -35,6 +42,76 @@ class DataAccess{
         $res = $this->pdo->query($sql);
         return $res->fetchAll();
     }
+
+    public function getResposta($id){
+
+        $sql = "SELECT * FROM respuestas WHERE id = '".$id."';";
+        $res = $this->pdo->query($sql);
+        return $res->fetch();
+    }
+
+    public function getRespostaCorrecta($id){
+
+        $sql = "SELECT * FROM respuestas WHERE id='".$id."';";
+        $res = $this->pdo->query($sql);
+        $resposta = $res->fetch();
+
+        if($resposta["verdadera"]){
+
+            return false;
+        }else{
+
+            $sql = "SELECT * FROM respuestas WHERE pregunta='".$resposta["pregunta"]."' AND verdadera='1';";
+            $res = $this->pdo->query($sql);
+            $resposta = $res->fetch();
+
+            return $resposta;
+        }
+    }
+
+    public function addPregunta($parametres){
+
+
+        if($parametres["tema"]==0 && !empty($parametres["tema_nou"])){
+
+            $sql_add_tema = "INSERT INTO temas (titulo, titulo_url) 
+            values ('".$parametres["tema_nou"]."', '".generarTituloParaUrl($parametres["tema_nou"])."');";
+
+            $result_add = $this->pdo->exec($sql_add_tema);
+
+            $sql = "SELECT * FROM temas WHERE titulo='".$parametres["tema_nou"]."';";
+            $res = $this->pdo->query($sql);
+            $tema = $res->fetch();
+            $tema_id = $tema["id"];
+        
+        }elseif($parametres["tema"]!=0){
+
+            $tema_id = $parametres["tema"];
+        }
+
+        $sql_add_pregunta = "INSERT INTO preguntas (pregunta, tema) values ('".$parametres["pregunta"]."', '".$tema_id."');";
+        $result_add_pregunta = $this->pdo->exec($sql_add_pregunta);
+
+        $sql_pregunta = "SELECT * FROM preguntas 
+                        WHERE pregunta='".$parametres["pregunta"]."' AND tema='".$tema_id."';";
+        $res_pregunta = $this->pdo->query($sql_pregunta);
+        $pregunta = $res_pregunta->fetch();
+
+        $quant_respostes = count($parametres)-4;
+
+        for($i=1; $i<=$quant_respostes; $i++){
+
+            if($parametres["resposta_ok"]==$i) $respostaOK = 1; else $respostaOK = 0;
+
+            $sql_add_resposta = "INSERT into respuestas (respuesta, verdadera, pregunta) 
+            VALUES ('".$parametres["resposta_".$i]."', '".$respostaOK."', '".$pregunta["id"]."');";
+            $result_add_resposta = $this->pdo->exec($sql_add_resposta);
+        }
+
+        if($result_add_resposta=="0") return false; else return true;
+
+    }
+
 
 }
 ?>
