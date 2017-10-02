@@ -1,6 +1,6 @@
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
- ** ENTRENADOR 2017 **
+ **ENTRENADOR 2017**
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ___
