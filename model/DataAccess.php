@@ -112,6 +112,30 @@ class DataAccess{
 
     }
 
+    public function getStatics(){
+
+        $sql = "SELECT * FROM estadistica;";
+        $res = $this->pdo->query($sql);
+        $result = $res->fetchAll();
+
+        $statics = [];
+
+        foreach ($result as $static) {
+
+            $apartat = strstr($static["url"], "/");
+            $apartat_id = str_replace("/", "", $apartat);
+
+            $sql = "SELECT titulo FROM temas WHERE id='".$apartat_id."';";
+            $res = $this->pdo->query($sql);
+            $tema = $res->fetch()['titulo'];
+            $url = $apartat = strstr($static["url"], "/", true)."/".$tema;
+
+            array_push($statics, [$url,$static["visites"]]);
+        }
+
+    return $statics;
+    }
+
 
 }
 ?>

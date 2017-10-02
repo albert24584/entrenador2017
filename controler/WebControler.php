@@ -87,5 +87,17 @@ class WebControler{
         return $response;
     }
 
+    public function stats($request, $response, $args){
+
+        $data['url'] = $request->getUri()->getBasePath();
+        $data['apartat'] = $request->getUri()->getPath();
+        $data['temas'] = $this->c->data->getTemas();
+        $data['statics'] = $this->c->data->getStatics();
+
+
+         $response = $this->c->view->render($response, "statics.php", $data);
+        return $response;
+    }
+
 }
 ?>

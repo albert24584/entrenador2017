@@ -1,4 +1,4 @@
 <?php
 require "DataAccess.php";
-include "functions.php";
+require "functions.php";
 ?>
