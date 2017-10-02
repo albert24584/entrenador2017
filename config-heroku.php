@@ -1,5 +1,5 @@
 <?php
-$$db = parse_url(getenv('DATABASE_URL'));
+$db = parse_url(getenv('DATABASE_URL'));
 
 $host   = $db['host'];
 $dbname = ltrim($db["path"],'/');

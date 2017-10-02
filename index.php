@@ -2,6 +2,7 @@
 require_once "vendor/autoload.php";
 require_once "controler/load.php";
 require_once "model/load.php";
+require_once "config-heroku.php"
 require_once "config.php";
 
 $configuration = [
