@@ -6,6 +6,6 @@
         "tuupola/slim-basic-auth": "^2.3"
     },
     "require-dev": {
-        "heroku/heroku-buildpack-php": "^124.0"
+        "phpunit/phpunit": "^6.3"
     }
 }
