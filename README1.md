@@ -1,20 +1,14 @@
-[id]: <http://example.com/>  "example.com"
-[id]: <http://www.google.es>  "www.google.es"
-___
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
- # ***  ___  ENTRENADOR 2017 ___  ***
-
+                                   ### ENTRENADOR 2017  
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
-
-
  ___
 ##  ( Práctica Final del módulo 3 del curso de desarrollo web 2017 ) ##
 ___
@@ -39,5 +33,3 @@ ___
 ![1](https://image.freepik.com/iconos-gratis/sombrero-de-posgrado_318-75247.jpg)
 
 # ENTRENADOR 2017
-  [id]
-____
