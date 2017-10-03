@@ -23,7 +23,8 @@ ___
 - **Pedro**
 - **Oscar**
 ___
-** [Cual es el objetivo de dicha práctica?]**
+## [Cuál es el objetivo de dicha práctica?] ##
+
 ###### Esta práctica, tiene como finalidad que el usuario registrado pueda elegir
 ###### un tema de los que es le presentan (que pueda elegir el que mas le parezca
 ###### o sobre el que crea que tiene un mayor conocimiento) y
