@@ -1,8 +1,18 @@
+
+___
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
- **ENTRENADOR 2017**
+ ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
  ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
+#  EEEEEEEEEEEENTRENADOR 2017777777777777777
+ ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
+ ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
+ ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
+ ![1](https://hugolafuente.es/wp-content/uploads/2016/01/yoga-1.png)
+ ![1](https://hugolafuente.es/wp-content/uploads/2016/01/estiramientos-1.png)
+
+
  ___
 ##  ( Práctica Final del módulo 3 del curso de desarrollo web 2017 ) ##
 ___
@@ -13,7 +23,8 @@ ___
 - **Pedro**
 - **Oscar**
 ___
-** [Cual es el objetivo de dicha práctica?]**
+## [Cuál es el objetivo de dicha práctica?] ##
+
 ###### Esta práctica, tiene como finalidad que el usuario registrado pueda elegir
 ###### un tema de los que es le presentan (que pueda elegir el que mas le parezca
 ###### o sobre el que crea que tiene un mayor conocimiento) y
@@ -25,3 +36,7 @@ ___
 ![1](https://image.freepik.com/iconos-gratis/sombrero-de-posgrado_318-75247.jpg)
 ![1](https://image.freepik.com/iconos-gratis/sombrero-de-posgrado_318-75247.jpg)
 ![1](https://image.freepik.com/iconos-gratis/sombrero-de-posgrado_318-75247.jpg)
+![1](https://image.freepik.com/iconos-gratis/sombrero-de-posgrado_318-75247.jpg)
+
+___             
+                                            ** Fin  documento **
